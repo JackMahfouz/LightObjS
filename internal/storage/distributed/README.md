@@ -1,0 +1,1 @@
+This module will contain the distributed storage implementation.
