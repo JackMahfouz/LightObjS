@@ -1,2 +1,3 @@
 # LightObjS
-Light weight object store
+Light weight object store.
+
