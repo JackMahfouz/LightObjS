@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - LightObjS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+
+        <h2>Create New User</h2>
+        <form id="createUserForm">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="username" required>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="password" required>
+            <label for="isAdmin">
+                <input type="checkbox" id="isAdmin" name="is_admin"> Is Admin
+            </label>
+            <button type="submit">Create User</button>
+        </form>
+        <p id="createUserMessage"></p>
+
+        <h2>All Users</h2>
+        <table id="usersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Is Admin</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Users will be loaded here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/static/js/admin.js"></script>
+</body>
+</html>
